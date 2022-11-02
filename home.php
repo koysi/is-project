@@ -11,6 +11,11 @@ if(isset($_POST['but_register'])){
 	header('Location: register.php');
 }
 
+// go to form
+if(isset($_POST['but_form'])){
+	header('Location: form.php');
+}
+
 // logout
 if(isset($_POST['but_logout'])){
 	session_destroy();
@@ -25,6 +30,9 @@ if(isset($_POST['but_logout'])){
 	<h1>Homepage</h1>
 	<form method='post' action="">
 		<input type="submit" value="Register User" name="but_register">
+	</form>
+	<form method='post' action="">
+		<input type="submit" value="Go to Reporting" name="but_form">
 	</form>
 	<form method='post' action="">
 		<input type="submit" value="Logout" name="but_logout">
