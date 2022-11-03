@@ -13,7 +13,7 @@ if(isset($_POST['but_register'])){
 
 // go to form
 if(isset($_POST['but_form'])){
-	header('Location: form.php');
+	header('Location: begform.php');
 }
 
 // logout
