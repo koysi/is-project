@@ -54,6 +54,52 @@ if(isset($_POST['but_logout'])){
                     <input type="number" class="textbox" id="begmillercase" name="begmillercase" placeholder="Beginning Cases" />
                     <input type="number" class="textbox" id="begmillercan" name="begmillercan" placeholder="Beginning Cans" />
                 </div>
+                <br>
+                <div>
+                    <label>Vizzy: </label>
+                    <br>
+                    <input type="number" class="textbox" id="begvizzycase" name="begvizzycase" placeholder="Beginning Cases" />
+                    <input type="number" class="textbox" id="begvizzycan" name="begvizzycan" placeholder="Beginning Cans" />
+                </div>
+                <br>
+                <div>
+                    <label>Topo Chico: </label>
+                    <br>
+                    <input type="number" class="textbox" id="begtopocase" name="begtopocase" placeholder="Beginning Cases" />
+                    <input type="number" class="textbox" id="begtopocan" name="begtopocan" placeholder="Beginning Cans" />
+                </div>
+                <br>
+                <div>
+                    <label>R&D Carolina: </label>
+                    <br>
+                    <input type="number" class="textbox" id="begrdccase" name="begrdccase" placeholder="Beginning Cases" />
+                    <input type="number" class="textbox" id="begrdccan" name="begrdccan" placeholder="Beginning Cans" />
+                </div>
+                <br>
+                <div>
+                    <label>R&D MTN: </label>
+                    <br>
+                    <input type="number" class="textbox" id="begrdmcase" name="begrdmcase" placeholder="Beginning Cases" />
+                    <input type="number" class="textbox" id="begrdmcan" name="begrdmcan" placeholder="Beginning Cans" />
+                </div>
+                <br>
+                <div>
+                    <label>Booneshine Tropic: </label>
+                    <br>
+                    <input type="number" class="textbox" id="begbstcase" name="begbstcase" placeholder="Beginning Cases" />
+                    <input type="number" class="textbox" id="begbstcan" name="begbstcan" placeholder="Beginning Cans" />
+                </div>
+                <br>
+                <div>
+                    <label>Water: </label>
+                    <br>
+                    <input type="number" class="textbox" id="begwatercase" name="begwatercase" placeholder="Beginning Cases" />
+                    <input type="number" class="textbox" id="begwatercan" name="begwatercan" placeholder="Beginning Bottles" />
+                </div>
+                <br>
+                <div>
+                        <input type="submit" value="Submit" name="submit_but" id="submit_but" />
+                </div>
             </form>
         </div>
     </body>
