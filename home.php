@@ -11,9 +11,24 @@ if(isset($_POST['but_register'])){
 	header('Location: register.php');
 }
 
-// go to form
-if(isset($_POST['but_form'])){
+// go to reports
+if(isset($_POST['but_reports'])){
+	header('Location: reports.php');
+}
+
+// go to beginning form
+if(isset($_POST['but_begform'])){
 	header('Location: begform.php');
+}
+
+// go to transfer inventory
+if(isset($_POST['but_transfer'])){
+	header('Location: transfer.php');
+}
+
+// go to end form
+if(isset($_POST['but_endform'])){
+	header('Location: endform.php');
 }
 
 // logout
