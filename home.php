@@ -47,7 +47,7 @@ if(isset($_POST['but_logout'])){
 		<input type="submit" value="Register User" name="but_register">
 	</form>
 	<form method='post' action="">
-		<input type="submit" value="Go to Reporting" name="but_form">
+		<input type="submit" value="Go to Reporting" name="but_begform">
 	</form>
 	<form method='post' action="">
 		<input type="submit" value="Logout" name="but_logout">
