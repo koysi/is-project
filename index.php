@@ -1,5 +1,5 @@
 <?php
-include "config.php";
+//include "config.php";
 
 if(isset($_POST['but_submit'])){
 
@@ -28,7 +28,7 @@ if(isset($_POST['but_submit'])){
 ?>
 <html>
     <head>
-    <center><img src="https://taftandhardingevents.com/wp-content/uploads/2022/06/taft-and-harding-final.png"></center>
+    <center><img src="https://taftandhardingevents.com/wp-content/uploads/2022/06/taft-and-harding-final.png" height=300 width=350></center>
 
         <title>Login Page</title>
         <link href="style.css" rel="stylesheet" type="text/css">
@@ -37,7 +37,7 @@ if(isset($_POST['but_submit'])){
         <div class="container">
             <form method="post" action="">
                 <div id="div_login">
-                    <h1 style="color:black">Login</h1>
+                    <h1>Login</h1>
                     <div>
                         <input type="text" class="textbox" id="txt_uname" name="txt_uname" placeholder="Username" />
                     </div>
