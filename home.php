@@ -42,6 +42,7 @@ if(isset($_POST['but_logout'])){
 <body>
 	<nav class="navbar background">
 		<ul class="nav-list">
+			<li><a href="home.php" class="active">Home</a></li>
 			<li><a href="reports.php">Reporting</a></li>
 			<li><a href="transfer.php">Transfers</a></li>
 			<li><a href="register.php">Register</a></li>

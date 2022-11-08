@@ -22,6 +22,12 @@
     color: white;
 }
 
+.active {
+    border-style: groove;
+    border-width: medium;
+    border-color: yellow;
+}
+
 .nav-list li a:hover {
     color: yellow;
 }

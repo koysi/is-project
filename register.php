@@ -1,19 +1,19 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
     <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <title>New User Registration</title>
+        <title>Reporting</title>
+        <link rel="stylesheet" href="homestyle.css">
     </head>
-<body>
-    <?php
-    $nameErr = "";
-    $emailErr = "";
-    $name = "";
-    $email = "";
-
-    if($_SERVER["REQUEST_METHOD"] == "POST") {
-        if (empty($_POST["name"])) {
-            $nameErr = "Name field is required";
-        }
-    }
+    <body>
+        <nav class="navbar background">
+            <ul class="nav-list">
+                <li><a href="home.php">Home</a></li>
+                <li><a href="reports.php" class="active">Reporting</a></li>
+                <li><a href="transfer.php">Transfers</a></li>
+                <li><a href="register.php">Register</a></li>
+                <li><a href="index.php">Logout</a></li>
+            </ul>
+        </nav>
+        <h1>Reporting</h1>
+    </body>
+</html>

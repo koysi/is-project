@@ -41,7 +41,7 @@ if(isset($_POST['but_submit'])){
                         <input type="text" class="textbox" id="txt_uname" name="txt_uname" placeholder="Username" />
                     </div>
                     <div>
-                        <input type="password" class="textbox" id="txt_uname" name="txt_pwd" placeholder="Password"/>
+                        <input type="password" class="textbox" id="txt_pwd" name="txt_pwd" placeholder="Password"/>
                     </div>
                     <div>
                         <input type="submit" value="Submit" name="but_submit" id="but_submit" />
