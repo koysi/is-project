@@ -28,8 +28,7 @@ if(isset($_POST['but_submit'])){
 ?>
 <html>
     <head>
-    <center><img src="https://taftandhardingevents.com/wp-content/uploads/2022/06/taft-and-harding-final.png" height=300 width=350></center>
-
+        <center><img src="https://taftandhardingevents.com/wp-content/uploads/2022/06/taft-and-harding-final.png" height=300 width=350></center>
         <title>Login Page</title>
         <link href="style.css" rel="stylesheet" type="text/css">
     </head>

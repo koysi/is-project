@@ -2,9 +2,6 @@
 include "config.php";
 
 // Check if user is logged in
-if(!isset($_SESSION['uname'])){
-	header('Location: index.php');
-}
 
 // register
 if(isset($_POST['but_register'])){
@@ -38,10 +35,17 @@ if(isset($_POST['but_logout'])){
 }
 ?>
 <!DOCTYPE html>
-<!DOCTYPE html>
 <html>
-<head></head>
+<head>
+	<link rel="stylesheet" href="style.css">
+</head>
 <body>
+	<ul>
+		<li><a href="reports.php">Reporting</a></li>
+		<li><a href="transfer.php">Transfers</a></li>
+		<li><a href="register.php">Register User</a></li>
+		<li><a href="index.php">Logout</a></li>
+	</ul>
 	<h1>Homepage</h1>
 	<form method='post' action="">
 		<input type="submit" value="Register User" name="but_register">
