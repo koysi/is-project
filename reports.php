@@ -16,6 +16,10 @@
         </nav>
         <h1>Reporting</h1><br>
         <div>
+            <label for="barid">Bar ID: </label>
+            <input type="number" class="textbox" id="barid" name="barid" />
+        </div>
+        <div>
             <label for="barname">Bar Name: </label>
             <input type="text" class="textbox" id="barname" name="barname" />
             <br>
