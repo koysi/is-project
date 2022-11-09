@@ -1,31 +1,3 @@
-<?php
-include "config.php";
-
-if(isset($_POST['but_submit'])){
-
-    $uname = mysqli_real_escape_string($con,$_POST['txt_uname']);
-    $password = mysqli_real_escape_string($con,$_POST['txt_pwd']);
-
-
-    if ($uname != "" && $password != ""){
-
-        $sql_query = "select count(*) as cntUser from users where username='".$uname."' and password='".$password."'";
-        $result = mysqli_query($con,$sql_query);
-        $row = mysqli_fetch_array($result);
-
-        $count = $row['cntUser'];
-
-        if($count > 0){
-            $_SESSION['uname'] = $uname;
-            header('Location: home.php');
-        }else{
-            echo "Invalid username and password";
-        }
-
-    }
-
-}
-?>
 <html>
     <head>
         <center><img src="https://taftandhardingevents.com/wp-content/uploads/2022/06/taft-and-harding-final.png" height=300 width=350></center>
@@ -52,3 +24,31 @@ if(isset($_POST['but_submit'])){
     </body>
 </html>
 
+<?php
+include "config.php";
+
+if(isset($_POST['but_submit'])){
+
+    $uname = mysqli_real_escape_string($con,$_POST['txt_uname']);
+    $password = mysqli_real_escape_string($con,$_POST['txt_pwd']);
+
+
+    if ($uname != "" && $password != ""){
+
+        $sql_query = "select count(*) as cntUser from users where username='".$uname."' and password='".$password."'";
+        $result = mysqli_query($con,$sql_query);
+        $row = mysqli_fetch_array($result);
+
+        $count = $row['cntUser'];
+
+        if($count > 0){
+            $_SESSION['uname'] = $uname;
+            header('Location: home.php');
+        }else{
+            echo '<div style="text-align: center;">Invalid username and password</div>';
+        }
+
+    }
+
+}
+?>
