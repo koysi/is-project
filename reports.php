@@ -1,3 +1,9 @@
+<!-- add dropdown menu to select products being reported
+DYNAMIC!-->
+<!-- get input forms connected to backend-->
+<!-- A and B stylesheets?-->
+<!-- Think of DB like a checkbook in regards to transfers:
+delete from srcbar, add to destbar-->
 <!DOCTYPE html>
 <html>
     <head>
@@ -15,6 +21,7 @@
             </ul>
         </nav>
         <h1>Reporting</h1><br>
+        <form method="post" action="">
         <div>
             <label for="barid">Bar ID: </label>
             <input type="number" class="textbox" id="barid" name="barid" />
@@ -33,13 +40,16 @@
             <label for="txt_date">Date: </label>
             <input type="text" class="textbox" id="txt_date" name="txt_date" />
         </div>
+        </form>
         <br>
+        <form method="post" action="">
         <div>
-            <input type="radio" id="beginning" name="begreport" value="Beginning">
+            <input type="radio" id="beginning" name="whenreport" value="Beginning">
             <label for="beginning">Beginning</label><br>
-            <input type="radio" id="ending" name="endreport" value="Ending">
+            <input type="radio" id="ending" name="whenreport" value="Ending">
             <label for="ending">Ending</label><br>
         </div>
+        </form>
         <br>
         <div>
             <form method="post" action="">
