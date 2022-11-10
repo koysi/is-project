@@ -14,7 +14,7 @@ if(isset($POST['btnLogout'])){
 <!DOCTYPE html>
 <html>
 <head>
-        <title>Register</title>
+        <title>Home</title>
         <link rel="stylesheet" href="homestyle.css">
     </head>
     <body>
