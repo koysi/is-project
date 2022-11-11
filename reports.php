@@ -21,7 +21,7 @@ delete from srcbar, add to destbar-->
     </body>
     </ul>
         <center><h1>Reporting</h1></center><br>
-        
+        <div class="div3"">
         <form method="post" action="">
             <form>
         <div>
@@ -121,6 +121,6 @@ delete from srcbar, add to destbar-->
                     <input type="submit" value="Submit" name="submit_but" id="submit_but" />
                 </div>
             </form>
-        
+        </div>
     </body>
 </html>
