@@ -1,10 +1,12 @@
 /*new navbar*/
 ul {
     list-style-type: none;
-    margin: 0;
+    margin: 10px;
     padding: 0;
     overflow: hidden;
-    background-color: #333;
+    background-color: rgb(255, 204, 0);
+    box-shadow: 0px 2px 2px 0px gray;
+    
   }
   
   li {
@@ -15,12 +17,13 @@ ul {
     display: block;
     color: white;
     text-align: center;
-    padding: 20px 25px;
+    padding: 30px 35px;
     text-decoration: none;
+    color: black;
   }
   
   li a:hover {
-    background-color: #111;
+    background-color: rgba(0, 0, 0, 0.222);
   }
 
 /*Form style*/
