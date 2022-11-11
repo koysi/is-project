@@ -19,38 +19,50 @@ delete from srcbar, add to destbar-->
         <li style="float:right"><a href="index.php">Logout</a></li>
     </body>
     </ul>
-        <h1>Reporting</h1><br>
+        <center><h1>Reporting</h1></center><br>
+        
         <form method="post" action="">
+            <form>
         <div>
             <label for="barid">Bar ID: </label>
-            <input type="number" class="textbox" id="barid" name="barid" />
+            <input type="number" class="textbox" id="barid" name="barid"/>
         </div>
+        </form><br>
+
+        <form>
         <div>
             <label for="barname">Bar Name: </label>
             <input type="text" class="textbox" id="barname" name="barname" />
             <br>
         </div>
+        </form><br>
+
+        <form>
         <div>
             <label for="man_name">Manager: </label>
             <input type="text" class="textbox" id="man_name" name="man_name" />
             <br>
         </div>
+        </form><br>
+
+        <form>
         <div>
             <label for="txt_date">Date: </label>
             <input type="text" class="textbox" id="txt_date" name="txt_date" />
         </div>
-        </form>
-        <br>
+        </form><br>
+        
         <form method="post" action="">
         <div>
             <input type="radio" id="beginning" name="whenreport" value="Beginning">
             <label for="beginning">Beginning</label><br>
+            </form><br>
+<form>
             <input type="radio" id="ending" name="whenreport" value="Ending">
             <label for="ending">Ending</label><br>
         </div>
-        </form>
-        <br>
-        <div>
+        </form><br>
+
             <form method="post" action="">
                 <div>
                     <label>Coors: </label>
@@ -58,13 +70,16 @@ delete from srcbar, add to destbar-->
                     <input type="number" class="textbox" id="begcoorcase" name="begcoorcase" placeholder="Beginning Cases" />
                     <input type="number" class="textbox" id="begcoorcan" name="begcoorcan" placeholder="Beginning Cans" />
                 </div>
-                <br>
+            </form><br>
+
+            <form method="post" action="">
                 <div>
                     <label>Miller: </label>
                     <br>
                     <input type="number" class="textbox" id="begmillercase" name="begmillercase" placeholder="Beginning Cases" />
                     <input type="number" class="textbox" id="begmillercan" name="begmillercan" placeholder="Beginning Cans" />
                 </div>
+</form>
                 <br>
                 <div>
                     <label>Vizzy: </label>
@@ -113,6 +128,6 @@ delete from srcbar, add to destbar-->
                     <input type="submit" value="Submit" name="submit_but" id="submit_but" />
                 </div>
             </form>
-        </div>
+        
     </body>
 </html>
