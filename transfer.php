@@ -13,37 +13,34 @@
         <li style="float:right"><a href="index.php">Logout</a></li>
     </body>
     </ul>
-        <h1>Transfer Inventory</h1><br>
-        <div>
+        <center><h1>Transfer Inventory</h1></center>
             <form method="post" action="">
                 <div>
                     <label for="srcbarid">Source Bar ID: </label>
                     <input type="number" class="textbox" id="srcbarid" name="srcbarid" />
-                </div>
+                </div><br>
                 <div>
                     <label for="srcbarname">Source Bar Name: </label>
                     <input type="text" class="textbox" id="srcbarname" name="srcbarname" />
-                </div>
+                </div><br>
                 <div>
                     <label for="destbarid">Destination Bar ID: </label>
                     <input type="number" class="textbox" id="destbarid" name="destbarid" />
-                </div>
+                </div><br>
                 <div>
                     <label for="destbarname">Destination Bar Name: </label>
                     <input type="text" class="textbox" id="destbarname" name="destbarname" />
-                </div>
+                </div><br>
                 <div>
                     <label for="man_name">Manager: </label>
                     <input type="text" class="textbox" id="man_name" name="man_name" />
-                </div>
+                </div><br>
                 <div>
                     <label for="txt_date">Date: </label>
                     <input type="text" class="textbox" id="txt_date" name="txt_date" />
-                </div>
+                </div><br>
             </form>
-        </div>
-        <br>
-        <div>
+            
             <form method="post" action="">
                 <div>
                     <label>Coors: </label>
