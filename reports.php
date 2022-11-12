@@ -77,7 +77,7 @@ delete from srcbar, add to destbar-->
         </div></center>
     </form>
 <br>
-    <table id="customers">
+    <table id="beer">
         <form method="post" action="">
             <tr>
                 <th>Beer</th>
