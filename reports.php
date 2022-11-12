@@ -86,43 +86,43 @@ delete from srcbar, add to destbar-->
             </tr>
             <tr>
                 <td>Coors</td>
-                <td><input type="number" class="textbox" id="begcoorcase" name="begcoorcase" placeholder="Beginning Cases" style="width:200px" /></td>
-                <td><input type="number" class="textbox" id="begcoorcan" name="begcoorcan" placeholder="Beginning Cans" style="width:200px" /></td>
+                <td><input type="number" class="textbox" id="begcoorcase" name="begcoorcase" placeholder="" style="width:200px" /></td>
+                <td><input type="number" class="textbox" id="begcoorcan" name="begcoorcan" placeholder="" style="width:200px" /></td>
             </tr>
             <tr>
                 <td>Miller</td>
-                <td><input type="number" class="textbox" id="begmillercase" name="begmillercase" placeholder="Beginning Cases" style="width:200px" /></td>
-                <td><input type="number" class="textbox" id="begmillercan" name="begmillercan" placeholder="Beginning Cans" style="width:200px" /></td>
+                <td><input type="number" class="textbox" id="begmillercase" name="begmillercase" placeholder="" style="width:200px" /></td>
+                <td><input type="number" class="textbox" id="begmillercan" name="begmillercan" placeholder="" style="width:200px" /></td>
             </tr>
             <tr>
                 <td>Vizzy</td>
-                <td><input type="number" class="textbox" id="begvizzycase" name="begvizzycase" placeholder="Beginning Cases" style="width:200px" /></td>
-                <td><input type="number" class="textbox" id="begvizzycan" name="begvizzycan" placeholder="Beginning Cans" style="width:200px" /></td>
+                <td><input type="number" class="textbox" id="begvizzycase" name="begvizzycase" placeholder="" style="width:200px" /></td>
+                <td><input type="number" class="textbox" id="begvizzycan" name="begvizzycan" placeholder="" style="width:200px" /></td>
             </tr>
             <tr>
                 <td>Topo Chico</td>
-                <td><input type="number" class="textbox" id="begtopocase" name="begtopocase" placeholder="Beginning Cases" style="width:200px" /></td>
-                <td><input type="number" class="textbox" id="begtopocan" name="begtopocan" placeholder="Beginning Cans" style="width:200px" /></td>
+                <td><input type="number" class="textbox" id="begtopocase" name="begtopocase" placeholder="" style="width:200px" /></td>
+                <td><input type="number" class="textbox" id="begtopocan" name="begtopocan" placeholder="" style="width:200px" /></td>
             </tr>
             <tr>
                 <td>R&D Carolina</td>
-                <td><input type="number" class="textbox" id="begrdccase" name="begrdccase" placeholder="Beginning Cases" style="width:200px" /></td>
-                <td><input type="number" class="textbox" id="begrdccan" name="begrdccan" placeholder="Beginning Cans" style="width:200px" /></td>
+                <td><input type="number" class="textbox" id="begrdccase" name="begrdccase" placeholder="" style="width:200px" /></td>
+                <td><input type="number" class="textbox" id="begrdccan" name="begrdccan" placeholder="" style="width:200px" /></td>
             </tr>
             <tr>
                 <td>R&D MTN</td>
-                <td><input type="number" class="textbox" id="begrdmcase" name="begrdmcase" placeholder="Beginning Cases" style="width:200px" /></td>
-                <td><input type="number" class="textbox" id="begrdmcan" name="begrdmcan" placeholder="Beginning Cans" style="width:200px" /></td>
+                <td><input type="number" class="textbox" id="begrdmcase" name="begrdmcase" placeholder="" style="width:200px" /></td>
+                <td><input type="number" class="textbox" id="begrdmcan" name="begrdmcan" placeholder="" style="width:200px" /></td>
             </tr>
             <tr>
                 <td>Booneshine Tropic</td>
-                <td><input type="number" class="textbox" id="begbstcase" name="begbstcase" placeholder="Beginning Cases" style="width:200px" /></td>
-                <td><input type="number" class="textbox" id="begbstcan" name="begbstcan" placeholder="Beginning Cans" style="width:200px" /></td>
+                <td><input type="number" class="textbox" id="begbstcase" name="begbstcase" placeholder="" style="width:200px" /></td>
+                <td><input type="number" class="textbox" id="begbstcan" name="begbstcan" placeholder="" style="width:200px" /></td>
             </tr>
             <tr>
                 <td>Water</td>
-                <td><input type="number" class="textbox" id="begwatercase" name="begwatercase" placeholder="Beginning Cases" style="width:200px" /></td>
-                <td><input type="number" class="textbox" id="begwatercan" name="begwatercan" placeholder="Beginning Bottles" style="width:200px" /></td>
+                <td><input type="number" class="textbox" id="begwatercase" name="begwatercase" placeholder="" style="width:200px" /></td>
+                <td><input type="number" class="textbox" id="begwatercan" name="begwatercan" placeholder="" style="width:200px" /></td>
             </tr>
         </form>
     </table>
