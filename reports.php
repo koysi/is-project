@@ -11,7 +11,7 @@ delete from srcbar, add to destbar-->
     <link rel="stylesheet" href="homestyle.css">
 </head>
 
-<body>
+<body style="margin:0">
     <ul>
         <li class="taftandharding" href="#"><img src="https://taftandhardingevents.com/wp-content/uploads/2022/06/taft-and-harding-final.png" height=73 width=90 alt="logo"></li>
         <b>
@@ -21,7 +21,7 @@ delete from srcbar, add to destbar-->
             <li><a href="reports.php">REPORTS</a></li>
         </b>
         <b>
-            <li><a href="transfer.php">TRANSFERS</a></li>
+           <!-- <li><a href="transfer.php">TRANSFERS</a></li> -->
         </b>
         <b>
             <li style="float:right"><a href="index.php">LOGOUT</a></li>
