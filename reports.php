@@ -1,7 +1,6 @@
 <!-- add dropdown menu to select products being reported
 DYNAMIC!-->
 <!-- get input forms connected to backend-->
-<!-- A and B stylesheets?-->
 <!-- Think of DB like a checkbook in regards to transfers:
 delete from srcbar, add to destbar-->
 <!DOCTYPE html>
@@ -23,9 +22,6 @@ delete from srcbar, add to destbar-->
         </b>
         <b>
             <li><a href="transfer.php">TRANSFERS</a></li>
-        </b>
-        <b>
-            <li><a href="register.php">REGISTER</a></li>
         </b>
         <b>
             <li style="float:right"><a href="index.php">LOGOUT</a></li>
@@ -134,7 +130,69 @@ delete from srcbar, add to destbar-->
 
 
 </div>
+<?php
+    // getting values from HTML form
+    if(isset($_POST['submit_but']) && isset($_POST['beginning']))
+    {
+        $barid = $_POST['barid'];
+        $barname = $_POST['barname'];
+        $manname = $_POST['man_name'];
+        $date = $_POST['txt_date'];
 
+        $begcoorscase = $_POST['begcoorcase'];
+        $begcoorscan = $_POST['begcoorcan'];
+        $begmillercase = $_POST['begmillercase'];
+        $begmillercan = $_POST['begmillercan'];
+        $begvizzycase = $_POST['begvizzycase'];
+        $begvizzycan = $_POST['begvizzycan'];
+        $begtopocase = $_POST['begtopocase'];
+        $begtopocan = $_POST['begtopocan'];
+        $begrdccase = $_POST['begrdccase'];
+        $begrdccan = $_POST['begrdccan'];
+        $begrdmcase = $_POST['begrdmcase'];
+        $begrdmcan = $_POST['begrdmcan'];
+        $begbstcase = $_POST['begbstcase'];
+        $begbstcan = $_POST['begbstcan'];
+        $begwatercase = $_POST['begwatercase'];
+        $begwaterbottle = $_POST['begwatercan'];
+    }
+
+    // database login details
+    $host = "localhost";
+    $username = "root";
+    $password = "";
+    if(isset($_POST['beginning']))
+    {
+        $dbname = "begreports";
+    }
+    else
+    {
+        $dbname = "endreports";
+    }
+
+    // creating connection
+    $con = mysqli_connect($host, $username, $password, $dbname);
+
+    // ensure connection is made
+    if (!$con)
+    {
+        die("Connection failed!" . mysqli_connect_error());
+    }
+
+    // using SQL to create a data entry query
+    $sql = "INSERT INTO `inv_entries` (`barid`, `barname`, `manname`, `date`) VALUES ('0', '$barid', '$barname', '$manname', '$date')";
+
+    // send query to the database to add values and confirm if successful
+    $rs = mysqli_query($con, $sql);
+    if($rs)
+    {
+        echo "Entries added!";
+    }
+
+    // close connection
+    mysqli_close($con);
+
+?>
 </body>
 <br><br><br><br>
 
