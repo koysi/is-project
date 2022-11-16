@@ -27,12 +27,12 @@ delete from srcbar, add to destbar-->
             <li style="float:right"><a href="index.php">LOGOUT</a></li>
         </b>
 </body>
-</ul>
-<br><br><br><br><br>
+</ul><br><br><br><br><br><br>
+
+<div class="div3">
 <center>
-    <h1>REPORTING</h1>
+    <h1>INVENTORY REPORTING</h1>
 </center>
-<div class="div3"">
         <form method=" post" action="">
     <form>
         <div>
