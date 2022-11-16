@@ -11,7 +11,7 @@ delete from srcbar, add to destbar-->
     <link rel="stylesheet" href="homestyle.css">
 </head>
 
-<body>
+<body style="margin: 0%">
     <ul>
         <li class="taftandharding" href="#"><img src="https://taftandhardingevents.com/wp-content/uploads/2022/06/taft-and-harding-final.png" height=73 width=90 alt="logo"></li>
         <b>
