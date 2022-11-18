@@ -18,10 +18,10 @@ delete from srcbar, add to destbar-->
             <li><a class="active" href="home.php">HOME</a></li>
         </b>
         <b>
-            <li><a href="reports.php">REPORTS</a></li>
+            <li><a href="reports.php">BEGINNING REPORTS</a></li>
         </b>
         <b>
-           <!-- <li><a href="transfer.php">TRANSFERS</a></li> -->
+        <li><a href="endreports.php">ENDING REPORTS</a></li>
         </b>
         <b>
             <li style="float:right"><a href="index.php">LOGOUT</a></li>
@@ -31,7 +31,7 @@ delete from srcbar, add to destbar-->
 
 <div class="div3">
 <center>
-    <h1>INVENTORY REPORTING</h1>
+    <h1>BEGINNING INVENTORY</h1>
 </center>
         <form method=" post" action="">
     <form>
@@ -63,7 +63,7 @@ delete from srcbar, add to destbar-->
             <input type="text" class="textbox" id="txt_date" name="txt_date" style="width: 690px"/>
         </div>
     </form><br>
-
+<!--
     <form method="post" action="">
         <center><div>
             <input type="radio" id="beginning" name="whenreport" value="Beginning">
@@ -72,7 +72,7 @@ delete from srcbar, add to destbar-->
             <input type="radio" id="ending" name="whenreport" value="Ending">
             <label for="ending">Ending</label><br>
         </div></center>
-    </form>
+    </form> -->
 <br>
     <table id="beer">
         <form method="post" action="">
