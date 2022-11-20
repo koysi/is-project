@@ -1,4 +1,5 @@
 <?php
+
 include "config.php";
 
 // Check if user is logged in
@@ -12,18 +13,40 @@ if(isset($POST['btnLogout'])){
 
 ?> 
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-        <title>Home</title>
-        <link rel="stylesheet" href="homestyle.css">
-    </head>
-    <body style="margin:0">
-    <ul>
-    <li class="taftandharding" href="#"><img src="https://taftandhardingevents.com/wp-content/uploads/2022/06/taft-and-harding-final.png" height=73 width=90 alt="logo"></li>
-        <b><li><a class="active" href="home.php">HOME</a></li></b>
-        <b><li><a href="reports.php">BEGINNING REPORTS</a></li></b>
-        <li><a href="endreports.php">ENDING REPORTS</a></li>
-        <b><li style="float:right"><a href="index.php">LOGOUT</a></li></b>
-    </body>
-    </ul>
+    
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <link rel="stylesheet" href="homestyle.css">
+  <title>Hamburger Menu Overlay</title>
+</head>
+<body>
+  <div class="menu-wrap">
+    <input type="checkbox" class="toggler">
+    <div class="hamburger"><div></div></div>
+    <div class="menu">
+      <div>
+        <div>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Report Beginning Inventory</a></li>
+            <li><a href="#">Report Ending Inventory</a></li>
+            <li><a href="#">Logout</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <header class="showcase">
+    <div class="container showcase-inner">
+      <h1>Taft and Harding</h1>
+      <p>PROVIDING STAFF & MANAGEMENT FOR BALLGAMES, CONCERTS, RODEOS, FESTIVALS & MORE SINCE 2005</p>
+      <a href="https://taftandhardingevents.com/" class="btn">Main Website</a>
+    </div>
+  </header>
+</body>
 </html>
