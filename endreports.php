@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <link rel="stylesheet" href="homestyle.css">
-    <title>Hamburger Menu Overlay</title>
+    <title>Ending Inventory</title>
 </head>
 
 <body>

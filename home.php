@@ -1,5 +1,5 @@
 <?php
-
+/*
 include "config.php";
 
 // Check if user is logged in
@@ -10,7 +10,7 @@ if (!isset($_SESSION['uname'])) {
 if (isset($POST['btnLogout'])) {
     session_destroy();
 }
-
+*/
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -22,7 +22,7 @@ if (isset($POST['btnLogout'])) {
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <link rel="stylesheet" href="homestyle.css">
-    <title>Hamburger Menu Overlay</title>
+    <title>Home</title>
 </head>
 
 <body>
@@ -48,7 +48,8 @@ if (isset($POST['btnLogout'])) {
     <header class="showcase">
         <div class="container showcase-inner">
             <h1>Taft and Harding</h1>
-            <p>PROVIDING STAFF & MANAGEMENT FOR BALLGAMES, CONCERTS, RODEOS, FESTIVALS & MORE SINCE 2005</p>
+            <p>PROVIDING STAFF & MANAGEMENT FOR BALLGAMES, CONCERTS, RODEOS, FESTIVALS & MORE SINCE 2005
+            </p>
             <a href="https://taftandhardingevents.com/" class="btn">Main Website</a>
         </div>
     </header>

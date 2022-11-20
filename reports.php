@@ -12,7 +12,7 @@ delete from srcbar, add to destbar-->
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <link rel="stylesheet" href="homestyle.css">
-    <title>Hamburger Menu Overlay</title>
+    <title>Beginning Inventory</title>
 </head>
 
 <body>
