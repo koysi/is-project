@@ -44,38 +44,28 @@ delete from srcbar, add to destbar-->
             <form method=" post" action=""><br>
                 <center><h1>BEGINNING INVENTORY</h1></center>
                 <br>
-                <form>
                     <div class="div4">
                         <label for="barid">Bar ID: </label><br>
                         <input type="number" class="textbox" id="barid" name="barid" style="width: 690px" />
                     </div>
-                </form>
 
-                <form>
                     <div class="div2">
                         <label for="barname">Bar Name: </label>
                         <input type="text" class="textbox" id="barname" name="barname" style="width: 690px" />
                         <br>
                     </div>
-                </form>
 
-                <form>
                     <div class="div4">
                         <label for="man_name">Manager: </label>
                         <input type="text" class="textbox" id="man_name" name="man_name" style="width: 690px" />
                         <br>
                     </div>
-                </form>
-
-                <form>
                     <div class="div2">
-                        <label for="txt_date">Date: </label>
+                        <label for="txt_date">Date (yyyy-mm-dd): </label>
                         <input type="text" class="textbox" id="txt_date" name="txt_date" style="width: 690px" />
                     </div>
-                </form>
                 <center><img src="https://taftandhardingevents.com/wp-content/uploads/2022/06/taft-and-harding-final.png" height=150 width=180 alt="logo"></center>
-                <table id="beer">
-                    <form method="post" action="">
+                    <table id="beer">
                         <tr>
                             <th>Beer</th>
                             <th>Cases</th>
@@ -121,72 +111,32 @@ delete from srcbar, add to destbar-->
                             <td><input type="number" class="textbox" id="begwatercase" name="begwatercase" placeholder="" style="width:200px" /></td>
                             <td><input type="number" class="textbox" id="begwatercan" name="begwatercan" placeholder="" style="width:200px" /></td>
                         </tr>
-                    </form>
-                </table>
-                <br>
-                <div>&nbsp;&nbsp;
-                    <input type="button" id="viewreports" name="viewreports" value="View Reports" style="width:100px; height: 30px;"> &nbsp;
-                    <input type="submit" value="Submit" name="submit_but" id="submit_but" style="width:100px; height: 30px;"/>
-                </div>
+                        <div>&nbsp;&nbsp;
+                            <input type="button" id="viewreports" name="viewreports" value="View Reports" style="width:100px; height: 30px;"> &nbsp;
+                            <input type="submit" value="Submit" name="submit_but" id="submit_but" style="width:100px; height: 30px;"/>
+                        </div>
+                    </table>
+                </form>
                 <br>
         </div>
-        <?php
-        // getting values from HTML form
-        if (isset($_POST['submit_but']) && isset($_POST['beginning'])) {
-            $barid = $_POST['barid'];
-            $barname = $_POST['barname'];
-            $manname = $_POST['man_name'];
-            $date = $_POST['txt_date'];
+<?php
+include "config.php";
 
-            $begcoorscase = $_POST['begcoorcase'];
-            $begcoorscan = $_POST['begcoorcan'];
-            $begmillercase = $_POST['begmillercase'];
-            $begmillercan = $_POST['begmillercan'];
-            $begvizzycase = $_POST['begvizzycase'];
-            $begvizzycan = $_POST['begvizzycan'];
-            $begtopocase = $_POST['begtopocase'];
-            $begtopocan = $_POST['begtopocan'];
-            $begrdccase = $_POST['begrdccase'];
-            $begrdccan = $_POST['begrdccan'];
-            $begrdmcase = $_POST['begrdmcase'];
-            $begrdmcan = $_POST['begrdmcan'];
-            $begbstcase = $_POST['begbstcase'];
-            $begbstcan = $_POST['begbstcan'];
-            $begwatercase = $_POST['begwatercase'];
-            $begwaterbottle = $_POST['begwatercan'];
-        }
+if(isset($_POST["submit_but"])) {
+    $barid = $_POST["barid"];
+    $barname = $_POST["barname"];
+    $manname = $_POST["man_name"];
+    $dateUp = $_POST["txt_date"];
+}
+$sql = "INSERT INTO beginv (barID, barName, manName, dateUploaded) VALUES ('" . $barid . "', '" . $barname . "', '" . $manname . "', '" . $dateUp . "')";
+if (mysqli_query($con, $sql)) {
+    echo "Database query successful.";
+} else {
+    echo "Error: " . $sql . "<br>" . mysqli_error($con);
+}
 
-        // database login details
-        $host = "localhost";
-        $username = "root";
-        $password = "";
-        if (isset($_POST['beginning'])) {
-            $dbname = "begreports";
-        } else {
-            $dbname = "endreports";
-        }
-
-        // creating connection
-        $con = mysqli_connect($host, $username, $password, $dbname);
-
-        // ensure connection is made
-        if (!$con) {
-            die("Connection failed!" . mysqli_connect_error());
-        }
-
-        // using SQL to create a data entry query
-        $sql = "INSERT INTO `inv_entries` (`barid`, `barname`, `manname`, `date`) VALUES ('0', '$barid', '$barname', '$manname', '$date')";
-
-        // send query to the database to add values and confirm if successful
-        $rs = mysqli_query($con, $sql);
-        if ($rs) {
-            echo "Entries added!";
-        }
-
-        // close connection
-        mysqli_close($con);
-
-        ?>
+mysqli_close($con);
+?>
 </center>
 <br><br><br><br>
     </div>
