@@ -15,11 +15,11 @@ delete from srcbar, add to destbar-->
     <title>Beginning Inventory</title>
 </head>
 
-<body>
+<div class="div5">
     <br><br>
     <br>
-    <h2 style="color:white;">REPORTING</h2>
-    <center> <img src="https://taftandhardingevents.com/wp-content/uploads/2022/06/taft-and-harding-final.png" height=200 width=230 alt="logo"></center>
+    <h2 style="color:black;">Beginning Inventory</h2>
+   
     <div class="menu-wrap">
         <input type="checkbox" class="toggler">
         <div class="hamburger">
@@ -38,14 +38,12 @@ delete from srcbar, add to destbar-->
             </div>
         </div>
     </div>
-
+<br>
     <center>
         <div class="div3">
-            <form method=" post" action="">
+            <form method=" post" action=""><br>
+                <center><h1>BEGINNING INVENTORY</h1></center>
                 <br>
-                <center>
-                    <h3>BEGINNING INVENTORY </h3>
-                </center><br>
                 <form>
                     <div class="div4">
                         <label for="barid">Bar ID: </label><br>
@@ -74,7 +72,8 @@ delete from srcbar, add to destbar-->
                         <label for="txt_date">Date: </label>
                         <input type="text" class="textbox" id="txt_date" name="txt_date" style="width: 690px" />
                     </div>
-                </form><br>
+                </form>
+                <center><img src="https://taftandhardingevents.com/wp-content/uploads/2022/06/taft-and-harding-final.png" height=150 width=180 alt="logo"></center>
                 <table id="beer">
                     <form method="post" action="">
                         <tr>
@@ -125,9 +124,9 @@ delete from srcbar, add to destbar-->
                     </form>
                 </table>
                 <br>
-                <div class="div2">
-                    <input type="button" id="viewreports" name="viewreports" value="View Reports"> &nbsp;
-                    <input type="submit" value="Submit" name="submit_but" id="submit_but" />
+                <div>&nbsp;&nbsp;
+                    <input type="button" id="viewreports" name="viewreports" value="View Reports" style="width:100px; height: 30px;"> &nbsp;
+                    <input type="submit" value="Submit" name="submit_but" id="submit_but" style="width:100px; height: 30px;"/>
                 </div>
                 <br>
         </div>
@@ -188,9 +187,8 @@ delete from srcbar, add to destbar-->
         mysqli_close($con);
 
         ?>
-</body>
 </center>
 <br><br><br><br>
-</body>
+    </div>
 
 </html>

@@ -1,3 +1,9 @@
+.outline
+{
+  border-color: red;
+  border-width: thick;
+}
+
 h2 {
   margin: 0px;
   padding: 10px;
@@ -34,12 +40,18 @@ h2 {
 }
 
 .div3 {
-  box-shadow: 0px 6px 6px 6px gray;
+  box-shadow: 0px 6px 6px 6px rgba(6, 6, 6, 0.801);
   width: 720px;
+  background-color: #f8f8f8;
   position: center;
   text-align: left;
   border-color: black;
   padding: 0px;
+}
+
+.div5
+{
+  background: url("https://scontent-atl3-2.xx.fbcdn.net/v/t39.30808-6/306957497_225900469807549_4488260622841538322_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=730e14&_nc_ohc=XMq4GuS5SjYAX96Aj1V&_nc_ht=scontent-atl3-2.xx&oh=00_AfB8udP1YDiOe2oqDdHWY4UY0Mo8ldd6uQKAs4hTTmAFtw&oe=637EF68A") no-repeat center center/cover;
 }
 
 .table-footer-cell {
