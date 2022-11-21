@@ -50,7 +50,7 @@ if (isset($POST['btnLogout'])) {
             <h1>Taft and Harding</h1>
             <p>PROVIDING STAFF & MANAGEMENT FOR BALLGAMES, CONCERTS, RODEOS, FESTIVALS & MORE SINCE 2005
             </p>
-            <a href="https://taftandhardingevents.com/" class="btn">Main Website</a>
+            <a href="https://taftandhardingevents.com/" target="_blank" rel="noopener noreferrer"class="btn">Main Website</a>
         </div>
     </header>
 </body>
