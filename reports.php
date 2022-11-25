@@ -70,7 +70,7 @@ delete from srcbar, add to destbar-->
 
                 <form>
                     <div class="div2">
-                        <label for="txt_date">Date: </label>
+                        <label for="txt_date">Date (yyyy-mm-dd): </label>
                         <input type="text" class="textbox" id="txt_date" name="txt_date" style="width: 690px" />
                     </div>
                 </form>
@@ -130,41 +130,38 @@ delete from srcbar, add to destbar-->
                 </div>
                 <br>
         </div>
+</center>
         <?php
         // getting values from HTML form
-        if (isset($_POST['submit_but']) && isset($_POST['beginning'])) {
-            $barid = $_POST['barid'];
-            $barname = $_POST['barname'];
-            $manname = $_POST['man_name'];
-            $date = $_POST['txt_date'];
+        if (isset($_POST['submit_but'])) {
+            $barid = $_REQUEST['barid'];
+            $barname = $_REQUEST['barname'];
+            $manname = $_REQUEST['man_name'];
+            $date = $_REQUEST['txt_date'];
 
-            $begcoorscase = $_POST['begcoorcase'];
-            $begcoorscan = $_POST['begcoorcan'];
-            $begmillercase = $_POST['begmillercase'];
-            $begmillercan = $_POST['begmillercan'];
-            $begvizzycase = $_POST['begvizzycase'];
-            $begvizzycan = $_POST['begvizzycan'];
-            $begtopocase = $_POST['begtopocase'];
-            $begtopocan = $_POST['begtopocan'];
-            $begrdccase = $_POST['begrdccase'];
-            $begrdccan = $_POST['begrdccan'];
-            $begrdmcase = $_POST['begrdmcase'];
-            $begrdmcan = $_POST['begrdmcan'];
-            $begbstcase = $_POST['begbstcase'];
-            $begbstcan = $_POST['begbstcan'];
-            $begwatercase = $_POST['begwatercase'];
-            $begwaterbottle = $_POST['begwatercan'];
+            $begcoorscase = $_REQUEST['begcoorcase'];
+            $begcoorscan = $_REQUEST['begcoorcan'];
+            $begmillercase = $_REQUEST['begmillercase'];
+            $begmillercan = $_REQUEST['begmillercan'];
+            $begvizzycase = $_REQUEST['begvizzycase'];
+            $begvizzycan = $_REQUEST['begvizzycan'];
+            $begtopocase = $_REQUEST['begtopocase'];
+            $begtopocan = $_REQUEST['begtopocan'];
+            $begrdccase = $_REQUEST['begrdccase'];
+            $begrdccan = $_REQUEST['begrdccan'];
+            $begrdmcase = $_REQUEST['begrdmcase'];
+            $begrdmcan = $_REQUEST['begrdmcan'];
+            $begbstcase = $_REQUEST['begbstcase'];
+            $begbstcan = $_REQUEST['begbstcan'];
+            $begwatercase = $_REQUEST['begwatercase'];
+            $begwaterbottle = $_REQUEST['begwatercan'];
         }
 
         // database login details
         $host = "localhost";
         $username = "root";
         $password = "";
-        if (isset($_POST['beginning'])) {
-            $dbname = "begreports";
-        } else {
-            $dbname = "endreports";
-        }
+        $dnbame = "database";
 
         // creating connection
         $con = mysqli_connect($host, $username, $password, $dbname);
@@ -175,7 +172,7 @@ delete from srcbar, add to destbar-->
         }
 
         // using SQL to create a data entry query
-        $sql = "INSERT INTO `inv_entries` (`barid`, `barname`, `manname`, `date`) VALUES ('0', '$barid', '$barname', '$manname', '$date')";
+        $sql = "INSERT INTO `inv_entries` (`barid`, `barname`, `manname`, `date`) VALUES ('$barid', '$barname', '$manname', '$date')";
 
         // send query to the database to add values and confirm if successful
         $rs = mysqli_query($con, $sql);
@@ -187,7 +184,6 @@ delete from srcbar, add to destbar-->
         mysqli_close($con);
 
         ?>
-</center>
 <br><br><br><br>
     </div>
 
