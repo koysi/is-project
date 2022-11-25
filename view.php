@@ -1,31 +1,20 @@
-<?php
-
-include "config.php";
-
-// Check if user is logged in
-if (!isset($_SESSION['uname'])) {
-    header('Location: index.php');
-}
-
-if (isset($POST['btnLogout'])) {
-    session_destroy();
-}
-
-?>
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <link rel="stylesheet" href="homestyle.css">
-    <title>Home</title>
+    <title>Beginning Inventory</title>
 </head>
 
-<body>
+<div>
+    <br><br>
+    <br>
+    <h2 style="color:black;">View Reports</h2>
+   
     <div class="menu-wrap">
         <input type="checkbox" class="toggler">
         <div class="hamburger">
@@ -45,15 +34,5 @@ if (isset($POST['btnLogout'])) {
             </div>
         </div>
     </div>
-
-    <header class="showcase">
-        <div class="container showcase-inner">
-            <h1>Taft and Harding</h1>
-            <p>PROVIDING STAFF & MANAGEMENT FOR BALLGAMES, CONCERTS, RODEOS, FESTIVALS & MORE SINCE 2005
-            </p>
-            <a href="https://taftandhardingevents.com/" target="_blank" rel="noopener noreferrer"class="btn">Main Website</a>
-        </div>
-    </header>
-</body>
-
+<br>
 </html>

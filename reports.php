@@ -32,6 +32,7 @@ delete from srcbar, add to destbar-->
                         <li><a href="home.php">Home</a></li>
                         <li><a href="reports.php">Report Beginning Inventory</a></li>
                         <li><a href="endreports.php">Report Ending Inventory</a></li>
+                        <li><a href="view.php">View Reports</a></li>
                         <li><a href="index.php">Logout</a></li>
                     </ul>
                 </div>
@@ -125,7 +126,6 @@ delete from srcbar, add to destbar-->
                 </table>
                 <br>
                 <div>&nbsp;&nbsp;
-                    <input type="button" id="viewreports" name="viewreports" value="View Reports" style="width:100px; height: 30px;"> &nbsp;
                     <input type="submit" value="Submit" name="submit_but" id="submit_but" style="width:100px; height: 30px;"/>
                 </div>
                 <br>
