@@ -128,8 +128,8 @@ attempted to add inventory variables to query-->
                     </form>
                 </table>
                 <br>
-                <div>&nbsp;&nbsp;
-                    <form method="post" action="">
+                <div>
+                    <form method="post" action="">&nbsp;&nbsp;
                     <input type="submit" value="Submit" name="submit_but" id="submit_but" style="width:100px; height: 30px;"/>
                     </form>
                 </div>
