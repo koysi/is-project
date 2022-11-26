@@ -3,6 +3,9 @@ DYNAMIC!-->
 <!-- get input forms connected to backend-->
 <!-- Think of DB like a checkbook in regards to transfers:
 delete from srcbar, add to destbar-->
+
+<!-- Update by Chris: encapsulated submit button in form field, 
+attempted to add inventory variables to query-->
 <!DOCTYPE html>
 <html lang="en">
 
@@ -126,7 +129,9 @@ delete from srcbar, add to destbar-->
                 </table>
                 <br>
                 <div>&nbsp;&nbsp;
+                    <form method="post" action="">
                     <input type="submit" value="Submit" name="submit_but" id="submit_but" style="width:100px; height: 30px;"/>
+                    </form>
                 </div>
                 <br>
         </div>
@@ -172,7 +177,7 @@ delete from srcbar, add to destbar-->
         }
 
         // using SQL to create a data entry query
-        $sql = "INSERT INTO `inv_entries` (`barid`, `barname`, `manname`, `date`) VALUES ('$barid', '$barname', '$manname', '$date')";
+        $sql = "INSERT INTO `inv_entries` (`barid`, `barname`, `manname`, `date`, `begcoorscase`, `begcoorscan`, `begmillercase`, `begmillercan`, `begvizzycase`, `begvizzycan`, `begtopocase`, `begtopocan`, `begrdccase`, `begrdccan`, `begrdmcase`, `begrdmcan`, `begwatercase`, `begwaterbottle`) VALUES ('$barid', '$barname', '$manname', '$date', '$begcoorscase', '$begcoorscan', '$begmillercase', '$begmillercan', '$begvizzycase', '$begvizzycan', '$begtopocase', '$begtopocan', '$begrdccase', '$begrdccan', '$begrdmcase', '$begrdmcan', '$begbstcase', '$begbstcan', '$begwatercase', '$begwaterbottle')";
 
         // send query to the database to add values and confirm if successful
         $rs = mysqli_query($con, $sql);
