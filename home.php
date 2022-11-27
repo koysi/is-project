@@ -51,16 +51,38 @@ if (isset($POST['btnLogout'])) {
             <h1>Taft & Harding</h1>
             <p>PROVIDING STAFF & MANAGEMENT FOR BALLGAMES, CONCERTS, RODEOS, FESTIVALS & MORE SINCE 2005
             </p>
-            <a href="https://taftandhardingevents.com/" target="_blank" rel="noopener noreferrer"class="btn">Main Website</a>
+            <a href="https://taftandhardingevents.com/" target="_blank" rel="noopener noreferrer" class="btn">Main Website</a>
+
+            <a href="#arrow"><img src="https://enterprisefilmsllc.com/wp-content/uploads/2018/07/white-down-arrow-png-2.png" style="height: 50px; width:50px"></a>
         </div>
     </header>
-<!--
+
     <header class="showcase2">
         <div class="container showcase-inner">
-            <br><br><br><center><h1>Welcome<center></h1>
+            <a id="arrow"><br><br><br>
+                <center>
+                    <h1>Instructions for Reporting</h1>
+                    <p>At the beginning and ending of every shift please do the following...</p><br>
+                </center>
+                <center><div class="list1">
+                    <ol type="1">
+                        <li>Log in to the inventory management website</li>
+                        <li>On the menu, click "Report Beginning Inventory"</li>
+                        <li>Enter the Bar ID</li>
+                        <li>Enter the Bar Name</li>
+                        <li>Enter your name</li>
+                        <li>Enter the date</li>
+                        <li>Count the beginning number of cans per brand</li>
+                        <li>Count the beginning number of cases per brand</li>
+                        <li>Enter each number in the respective category</li>
+                        <li>Make sure to fill in all fields</li>
+                        <li>Submit the report</li>
+                    </ol>
+                </div></center>
+            </a></h1>
         </div>
     </header>
--->
+
 </body>
 
 </html>
