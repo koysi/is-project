@@ -7,20 +7,11 @@
 .home-section {
     position: center;
     background: #f5f5f5;
+    box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.753);
     border-radius: 10px / 5px;
     padding: 5px;
     width: 1000px;
     margin: auto;
-}
-
-.sidebar.active~.home-section {
-    width: calc(100% - 60px);
-    left: 60px;
-}
-
-.sidebar.active~.home-section nav {
-    left: 60px;
-    width: calc(100% - 60px);
 }
 
 .home-section .home-content {
@@ -77,7 +68,7 @@
     /* padding: 0 20px; */
 }
 
-/* left box */
+/* reports box */
 .home-content .sales-boxes .recent-sales {
     width: 65%;
     background: #fff;
@@ -162,7 +153,7 @@
     align-items: center;
     justify-content: center;
     width: 950px;
-    background: #fff;
+    background-color: rgb(255, 204, 0);
     padding: 10px 11px;
     margin: 19px;
     border-radius: 12px;

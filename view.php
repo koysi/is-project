@@ -38,7 +38,7 @@
         <section class="home-section">
             <div class="home-content">
                 <center>
-                    <h1>Report History</h1>
+                    <h1>TODAY'S REPORT</h1>
                 </center><br>
                 <div class="overview-boxes">
                     <div class="box">
@@ -79,122 +79,125 @@
                 <!--Report History-->
                 <div class="sales-boxes">
                     <div class="recent-sales box">
-                        <div class="title">Report History</div>
-                        <div class="sales-details">
-                            <ul class="details">
-                                <li class="topic">Recent</li>
-                                <li><a href="#">Submitted Report</a></li>
-                                <li><a href="#">Submitted Report</a></li>
-                                <li><a href="#">Submitted Report</a></li>
-                                <li><a href="#">Submitted Report</a></li>
-                                <li><a href="#">Submitted Report</a></li>
-                                <li><a href="#">Submitted Report</a></li>
-                                <li><a href="#">Submitted Report</a></li>
-                            </ul>
-                            <ul class="details">
-                                <li class="topic">Date</li>
-                                <li><a href="#">Date Here</a></li>
-                                <li><a href="#">Date Here</a></li>
-                                <li><a href="#">Date Here</a></li>
-                                <li><a href="#">Date Here</a></li>
-                                <li><a href="#">Date Here</a></li>
-                                <li><a href="#">Date Here</a></li>
-                                <li><a href="#">Date Here</a></li>
-                            </ul>
-                            <ul class="details">
-                                <li class="topic">Location</li>
-                                <li><a href="#">Bar</a></li>
-                                <li><a href="#">Bar</a></li>
-                                <li><a href="#">Bar</a></li>
-                                <li><a href="#">Bar</a></li>
-                                <li><a href="#">Bar</a></li>
-                                <li><a href="#">Bar</a></li>
-                                <li><a href="#">Bar</a></li>
-                            </ul>
-                            <ul class="details">
-                                <li class="topic">Total</li>
-                                <li><a href="#">$</a></li>
-                                <li><a href="#">$</a></li>
-                                <li><a href="#">$</a></li>
-                                <li><a href="#">$</a></li>
-                                <li><a href="#">$</a></li>
-                                <li><a href="#">$</a></li>
-                                <li><a href="#">$</a></li>
-                            </ul>
-
-                        </div>
-                        <div>
-                            <form method="post" action="">
-                                <input type="submit" value="View All" name="see_all" id="submit_but" style="width:100px; height: 30px;" />
-                            </form>
-                        </div>
+                        <b>
+                            <div class="title">Report History
+                        </b>
                     </div>
-
-                    <!--I had a box for top sales but I'm not sure if we need that or not so for now it's invisible because it helps 
-                    the formatting and can be easily added back if we decide to use it-->
-                    <div class="top-sales box">
-                        <div class="title"></div>
-                        <ul class="top-sales-details">
-                            <li>
-                                <a href="#">
-                                    <span class="product">Beer Name</span>
-                                </a>
-                                <span class="price">$</span>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <span class="product">Beer Name</span>
-                                </a>
-                                <span class="price">$</span>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <span class="product">Beer Name</span>
-                                </a>
-                                <span class="price">$</span>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <span class="product">Beer Name</span>
-                                </a>
-                                <span class="price">$</span>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <span class="product">Beer Name</span>
-                                </a>
-                                <span class="price">$</span>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <span class="product">Beer Name</span>
-                                </a>
-                                <span class="price">$</span>
-                            <li>
-                                <a href="#">
-                                    <span class="product">Beer Name</span>
-                                </a>
-                                <span class="price">$</span>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <span class="product">Beer Name</span>
-                                </a>
-                                <span class="price">$</span>
-                            </li>
+                    <div class="sales-details">
+                        <ul class="details">
+                            <li class="topic"><i>Recent</li></i>
+                            <li><a href="#">Submitted Report</a></li>
+                            <li><a href="#">Submitted Report</a></li>
+                            <li><a href="#">Submitted Report</a></li>
+                            <li><a href="#">Submitted Report</a></li>
+                            <li><a href="#">Submitted Report</a></li>
+                            <li><a href="#">Submitted Report</a></li>
+                            <li><a href="#">Submitted Report</a></li>
                         </ul>
+                        <ul class="details">
+                            <li class="topic"><i>Date</li></i>
+                            <li><a href="#">Date Here</a></li>
+                            <li><a href="#">Date Here</a></li>
+                            <li><a href="#">Date Here</a></li>
+                            <li><a href="#">Date Here</a></li>
+                            <li><a href="#">Date Here</a></li>
+                            <li><a href="#">Date Here</a></li>
+                            <li><a href="#">Date Here</a></li>
+                        </ul>
+                        <ul class="details">
+                            <li class="topic"><i>Location</li></i>
+                            <li><a href="#">Bar</a></li>
+                            <li><a href="#">Bar</a></li>
+                            <li><a href="#">Bar</a></li>
+                            <li><a href="#">Bar</a></li>
+                            <li><a href="#">Bar</a></li>
+                            <li><a href="#">Bar</a></li>
+                            <li><a href="#">Bar</a></li>
+                        </ul>
+                        <ul class="details">
+                            <li class="topic"><i>Total</li></i>
+                            <li><a href="#">$</a></li>
+                            <li><a href="#">$</a></li>
+                            <li><a href="#">$</a></li>
+                            <li><a href="#">$</a></li>
+                            <li><a href="#">$</a></li>
+                            <li><a href="#">$</a></li>
+                            <li><a href="#">$</a></li>
+                        </ul>
+
+                    </div>
+                    <div>
+                        <form method="post" action="">
+                            <input type="submit" value="View All" name="see_all" id="submit_but" style="width:100px; height: 30px;" />
+                        </form>
                     </div>
                 </div>
-                
-                <!--Bottom disclaimer-->
-                <div class="overview-boxes2">
-                    <div class="box">
-                        <div class="right-side">
-                            <div class="box-topic"><i>The printable version of the reports can be found by clicking under recent</i></div>
-                            <div class="indicator">
-                            </div>
+
+                <!--I had a box for top sales but I'm not sure if we need that or not so for now it's invisible because it helps 
+                    the formatting and can be easily added back if we decide to use it-->
+                <div class="top-sales box">
+                    <div class="title"></div>
+                    <ul class="top-sales-details">
+                        <li>
+                            <a href="#">
+                                <span class="product">Beer Name</span>
+                            </a>
+                            <span class="price">$</span>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="product">Beer Name</span>
+                            </a>
+                            <span class="price">$</span>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="product">Beer Name</span>
+                            </a>
+                            <span class="price">$</span>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="product">Beer Name</span>
+                            </a>
+                            <span class="price">$</span>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="product">Beer Name</span>
+                            </a>
+                            <span class="price">$</span>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="product">Beer Name</span>
+                            </a>
+                            <span class="price">$</span>
+                        <li>
+                            <a href="#">
+                                <span class="product">Beer Name</span>
+                            </a>
+                            <span class="price">$</span>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="product">Beer Name</span>
+                            </a>
+                            <span class="price">$</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!--Bottom disclaimer-->
+            <div class="overview-boxes2">
+                <div class="box">
+                    <div class="right-side">
+                        <div class="box-topic"><i><b>The printable version of the reports can be found by clicking the submitted reports</b></i></div>
+                        <div class="indicator">
                         </div>
                     </div>
+                </div>
         </section><br><br>
 </body>
 
