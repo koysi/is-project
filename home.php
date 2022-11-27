@@ -1,5 +1,5 @@
 <?php
-
+/*
 include "config.php";
 
 // Check if user is logged in
@@ -10,7 +10,7 @@ if (!isset($_SESSION['uname'])) {
 if (isset($POST['btnLogout'])) {
     session_destroy();
 }
-
+*/
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -48,12 +48,19 @@ if (isset($POST['btnLogout'])) {
 
     <header class="showcase">
         <div class="container showcase-inner">
-            <h1>Taft and Harding</h1>
+            <h1>Taft & Harding</h1>
             <p>PROVIDING STAFF & MANAGEMENT FOR BALLGAMES, CONCERTS, RODEOS, FESTIVALS & MORE SINCE 2005
             </p>
             <a href="https://taftandhardingevents.com/" target="_blank" rel="noopener noreferrer"class="btn">Main Website</a>
         </div>
     </header>
+<!--
+    <header class="showcase2">
+        <div class="container showcase-inner">
+            <br><br><br><center><h1>Welcome<center></h1>
+        </div>
+    </header>
+-->
 </body>
 
 </html>
