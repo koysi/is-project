@@ -1,5 +1,5 @@
 <?php
-
+/*
 include "config.php";
 
 // Check if user is logged in
@@ -10,7 +10,7 @@ if (!isset($_SESSION['uname'])) {
 if (isset($POST['btnLogout'])) {
     session_destroy();
 }
-
+*/
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -62,12 +62,12 @@ if (isset($POST['btnLogout'])) {
             <a id="arrow"><br><br><br>
                 <center>
                     <h1>Instructions for Reporting</h1>
-                    <p>At the beginning and ending of every shift please do the following...</p><br>
+                    <p>At the beginning and ending of every shift please do the following...</p><br><br>
                 </center>
                 <center><div class="list1">
                     <ol type="1">
                         <li>Log in to the inventory management website</li>
-                        <li>On the menu, click "Report Beginning Inventory"</li>
+                        <li>On the menu, click "Report Beginning Inventory" <br> or "Report Ending Inventory"</li>
                         <li>Enter the Bar ID</li>
                         <li>Enter the Bar Name</li>
                         <li>Enter your name</li>
