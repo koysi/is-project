@@ -1,5 +1,5 @@
 <?php
-/*
+
 include "config.php";
 
 // Check if user is logged in
@@ -10,7 +10,7 @@ if (!isset($_SESSION['uname'])) {
 if (isset($POST['btnLogout'])) {
     session_destroy();
 }
-*/
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
