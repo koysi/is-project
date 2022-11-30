@@ -14,7 +14,7 @@
     <br><br>
     <br>
     <h2 style="color:black;">Ending Inventory</h2>
-   
+
     <div class="menu-wrap">
         <input type="checkbox" class="toggler">
         <div class="hamburger">
@@ -34,11 +34,13 @@
             </div>
         </div>
     </div>
-<br>
+    <br>
     <center>
         <div class="div3">
             <form method=" post" action=""><br>
-                <center><h1>ENDING INVENTORY</h1></center>
+                <center>
+                    <h1>ENDING INVENTORY</h1>
+                </center>
                 <br>
                 <form>
                     <div class="div4">
@@ -121,9 +123,10 @@
                 </table>
                 <br>
                 <div>&nbsp;&nbsp;
-                    <input type="submit" value="Submit" name="submit_but" id="submit_but" style="width:100px; height: 30px;"/>
+                    <input type="submit" value="Submit" name="submit_but" id="submit_but" style="width:100px; height: 30px;" />
                 </div>
                 <br>
+            </form>
         </div>
         <?php
         // getting values from HTML form
@@ -182,8 +185,8 @@
         mysqli_close($con);
 
         ?>
-</center>
-<br><br><br><br>
-    </div>
+    </center>
+    <br><br><br><br>
+</div>
 
 </html>

@@ -22,7 +22,7 @@ attempted to add inventory variables to query-->
     <br><br>
     <br>
     <h2 style="color:black;">Beginning Inventory</h2>
-   
+
     <div class="menu-wrap">
         <input type="checkbox" class="toggler">
         <div class="hamburger">
@@ -42,11 +42,13 @@ attempted to add inventory variables to query-->
             </div>
         </div>
     </div>
-<br>
+    <br>
     <center>
         <div class="div3">
             <form method=" post" action=""><br>
-                <center><h1>BEGINNING INVENTORY</h1></center>
+                <center>
+                    <h1>BEGINNING INVENTORY</h1>
+                </center>
                 <br>
                 <form>
                     <div class="div4">
@@ -130,66 +132,67 @@ attempted to add inventory variables to query-->
                 <br>
                 <div>
                     <form method="post" action="">&nbsp;&nbsp;
-                    <input type="submit" value="Submit" name="submit_but" id="submit_but" style="width:100px; height: 30px;"/>
+                        <input type="submit" value="Submit" name="submit_but" id="submit_but" style="width:100px; height: 30px;" />
                     </form>
                 </div>
                 <br>
+            </form>
         </div>
-</center>
-        <?php
-        // getting values from HTML form
-        if (isset($_POST['submit_but'])) {
-            $barid = $_REQUEST['barid'];
-            $barname = $_REQUEST['barname'];
-            $manname = $_REQUEST['man_name'];
-            $date = $_REQUEST['txt_date'];
+    </center>
+    <?php
+    // getting values from HTML form
+    if (isset($_POST['submit_but'])) {
+        $barid = $_REQUEST['barid'];
+        $barname = $_REQUEST['barname'];
+        $manname = $_REQUEST['man_name'];
+        $date = $_REQUEST['txt_date'];
 
-            $begcoorscase = $_REQUEST['begcoorcase'];
-            $begcoorscan = $_REQUEST['begcoorcan'];
-            $begmillercase = $_REQUEST['begmillercase'];
-            $begmillercan = $_REQUEST['begmillercan'];
-            $begvizzycase = $_REQUEST['begvizzycase'];
-            $begvizzycan = $_REQUEST['begvizzycan'];
-            $begtopocase = $_REQUEST['begtopocase'];
-            $begtopocan = $_REQUEST['begtopocan'];
-            $begrdccase = $_REQUEST['begrdccase'];
-            $begrdccan = $_REQUEST['begrdccan'];
-            $begrdmcase = $_REQUEST['begrdmcase'];
-            $begrdmcan = $_REQUEST['begrdmcan'];
-            $begbstcase = $_REQUEST['begbstcase'];
-            $begbstcan = $_REQUEST['begbstcan'];
-            $begwatercase = $_REQUEST['begwatercase'];
-            $begwaterbottle = $_REQUEST['begwatercan'];
-        }
+        $begcoorscase = $_REQUEST['begcoorcase'];
+        $begcoorscan = $_REQUEST['begcoorcan'];
+        $begmillercase = $_REQUEST['begmillercase'];
+        $begmillercan = $_REQUEST['begmillercan'];
+        $begvizzycase = $_REQUEST['begvizzycase'];
+        $begvizzycan = $_REQUEST['begvizzycan'];
+        $begtopocase = $_REQUEST['begtopocase'];
+        $begtopocan = $_REQUEST['begtopocan'];
+        $begrdccase = $_REQUEST['begrdccase'];
+        $begrdccan = $_REQUEST['begrdccan'];
+        $begrdmcase = $_REQUEST['begrdmcase'];
+        $begrdmcan = $_REQUEST['begrdmcan'];
+        $begbstcase = $_REQUEST['begbstcase'];
+        $begbstcan = $_REQUEST['begbstcan'];
+        $begwatercase = $_REQUEST['begwatercase'];
+        $begwaterbottle = $_REQUEST['begwatercan'];
+    }
 
-        // database login details
-        $host = "localhost";
-        $username = "root";
-        $password = "";
-        $dnbame = "database";
+    // database login details
+    $host = "localhost";
+    $username = "root";
+    $password = "";
+    $dnbame = "database";
 
-        // creating connection
-        $con = mysqli_connect($host, $username, $password, $dbname);
+    // creating connection
+    $con = mysqli_connect($host, $username, $password, $dbname);
 
-        // ensure connection is made
-        if (!$con) {
-            die("Connection failed!" . mysqli_connect_error());
-        }
+    // ensure connection is made
+    if (!$con) {
+        die("Connection failed!" . mysqli_connect_error());
+    }
 
-        // using SQL to create a data entry query
-        $sql = "INSERT INTO `inv_entries` (`barid`, `barname`, `manname`, `date`, `begcoorscase`, `begcoorscan`, `begmillercase`, `begmillercan`, `begvizzycase`, `begvizzycan`, `begtopocase`, `begtopocan`, `begrdccase`, `begrdccan`, `begrdmcase`, `begrdmcan`, `begwatercase`, `begwaterbottle`) VALUES ('$barid', '$barname', '$manname', '$date', '$begcoorscase', '$begcoorscan', '$begmillercase', '$begmillercan', '$begvizzycase', '$begvizzycan', '$begtopocase', '$begtopocan', '$begrdccase', '$begrdccan', '$begrdmcase', '$begrdmcan', '$begbstcase', '$begbstcan', '$begwatercase', '$begwaterbottle')";
+    // using SQL to create a data entry query
+    $sql = "INSERT INTO `inv_entries` (`barid`, `barname`, `manname`, `date`, `begcoorscase`, `begcoorscan`, `begmillercase`, `begmillercan`, `begvizzycase`, `begvizzycan`, `begtopocase`, `begtopocan`, `begrdccase`, `begrdccan`, `begrdmcase`, `begrdmcan`, `begwatercase`, `begwaterbottle`) VALUES ('$barid', '$barname', '$manname', '$date', '$begcoorscase', '$begcoorscan', '$begmillercase', '$begmillercan', '$begvizzycase', '$begvizzycan', '$begtopocase', '$begtopocan', '$begrdccase', '$begrdccan', '$begrdmcase', '$begrdmcan', '$begbstcase', '$begbstcan', '$begwatercase', '$begwaterbottle')";
 
-        // send query to the database to add values and confirm if successful
-        $rs = mysqli_query($con, $sql);
-        if ($rs) {
-            echo "Entries added!";
-        }
+    // send query to the database to add values and confirm if successful
+    $rs = mysqli_query($con, $sql);
+    if ($rs) {
+        echo "Entries added!";
+    }
 
-        // close connection
-        mysqli_close($con);
+    // close connection
+    mysqli_close($con);
 
-        ?>
-<br><br><br><br>
-    </div>
+    ?>
+    <br><br><br><br>
+</div>
 
 </html>
