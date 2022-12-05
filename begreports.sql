@@ -1,8 +1,8 @@
 CREATE TABLE `inv_entries` (
-  `barid` varchar(80) NOT NULL,
+  `barid` INT(80) NOT NULL,
   `barname` varchar(80) NOT NULL,
   `manname` varchar(80) NOT NULL,
-  `date` varchar(80) NOT NULL,
+  `date` DATE NOT NULL,
   `begcoorscase` int(20),
   `begcoorscan` int(20),
   `begmillercase` int(20),
