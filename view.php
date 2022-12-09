@@ -204,55 +204,5 @@
 </html>
 
 <?php
-// getting values from HTML form
-if (isset($_POST['submit_but'])) {
-    $barid = $_REQUEST['barid'];
-    $barname = $_REQUEST['barname'];
-    $manname = $_REQUEST['man_name'];
-    $date = $_REQUEST['txt_date'];
-
-    $begcoorscase = $_REQUEST['begcoorcase'];
-    $begcoorscan = $_REQUEST['begcoorcan'];
-    $begmillercase = $_REQUEST['begmillercase'];
-    $begmillercan = $_REQUEST['begmillercan'];
-    $begvizzycase = $_REQUEST['begvizzycase'];
-    $begvizzycan = $_REQUEST['begvizzycan'];
-    $begtopocase = $_REQUEST['begtopocase'];
-    $begtopocan = $_REQUEST['begtopocan'];
-    $begrdccase = $_REQUEST['begrdccase'];
-    $begrdccan = $_REQUEST['begrdccan'];
-    $begrdmcase = $_REQUEST['begrdmcase'];
-    $begrdmcan = $_REQUEST['begrdmcan'];
-    $begbstcase = $_REQUEST['begbstcase'];
-    $begbstcan = $_REQUEST['begbstcan'];
-    $begwatercase = $_REQUEST['begwatercase'];
-    $begwaterbottle = $_REQUEST['begwatercan'];
-}
-
-// database login details
-$host = "localhost";
-$username = "root";
-$password = "";
-$dnbame = "database";
-
-// creating connection
-$con = mysqli_connect($host, $username, $password, $dbname);
-
-// ensure connection is made
-if (!$con) {
-    die("Connection failed!" . mysqli_connect_error());
-}
-
-// using SQL to create a data entry query
-$sql = "INSERT INTO `inv_entries` (`barid`, `barname`, `manname`, `date`, `begcoorscase`, `begcoorscan`, `begmillercase`, `begmillercan`, `begvizzycase`, `begvizzycan`, `begtopocase`, `begtopocan`, `begrdccase`, `begrdccan`, `begrdmcase`, `begrdmcan`, `begwatercase`, `begwaterbottle`) VALUES ('$barid', '$barname', '$manname', '$date', '$begcoorscase', '$begcoorscan', '$begmillercase', '$begmillercan', '$begvizzycase', '$begvizzycan', '$begtopocase', '$begtopocan', '$begrdccase', '$begrdccan', '$begrdmcase', '$begrdmcan', '$begbstcase', '$begbstcan', '$begwatercase', '$begwaterbottle')";
-
-// send query to the database to add values and confirm if successful
-$rs = mysqli_query($con, $sql);
-if ($rs) {
-    echo "Entries added!";
-}
-
-// close connection
-mysqli_close($con);
-
+#need some stuff here
 ?>

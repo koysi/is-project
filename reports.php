@@ -60,7 +60,7 @@
                 </div>
 
                 <div class="div2">
-                    <label for="txt_date">Date (yyyy-mm-dd): </label>
+                    <label for="txt_date">Date (yyyy/mm/dd): </label>
                     <input type="text" class="textbox" id="txt_date" name="txt_date" style="width: 690px" />
                 </div>
                 <div>
@@ -142,7 +142,7 @@
         $barid = mysqli_real_escape_string($con, $_POST['barid']);
         $barname = mysqli_real_escape_string($con, $_POST['barname']);
         $managername = mysqli_real_escape_string($con, $_POST['manname']);
-        $date = mysqli_real_escape_string($con, $_POST['txt_date']);
+        $date = $_POST['txt_date'];
 
         $begcoorscase = mysqli_real_escape_string($con, $_POST['begcoorcase']);
         $begcoorscan = mysqli_real_escape_string($con, $_POST['begcoorcan']);
@@ -162,48 +162,7 @@
         $begwaterbottle = mysqli_real_escape_string($con, $_POST['begwatercan']);
 
         // using SQL to create a data entry query
-        $sql = "INSERT INTO beginv (barID, 
-        barName, 
-        manName, 
-        coorCase,  
-        coorCan, 
-        dateUploaded
-        millerCase, 
-        millerCan, 
-        vizzyCase, 
-        vizzyCan, 
-        topoCase, 
-        topoCan, 
-        rdcCase, 
-        rdcCan, 
-        rdmCase, 
-        rdmCan, 
-        bstCase, 
-        bstCan, 
-        waterCase, 
-        waterBottle
-        ) 
-        VALUES (" . $barid . 
-        ", " . $barname . 
-        ", " . $managername . 
-        ", " . $date . 
-        ", " . $begcoorscase . 
-        ", " . $begcoorscan . 
-        ", " . $begmillercase . 
-        ", " . $begmillercan . 
-        ", " . $begvizzycase . 
-        ", " . $begvizzycan . 
-        ", " . $begtopocase . 
-        ", " . $begtopocan . 
-        ", " . $begrdccase . 
-        ", " . $begrdccan . 
-        ", " . $begrdmcase . 
-        ", " . $begrdmcan . 
-        ", " . $begbstcase . 
-        ", " . $begbstcan . 
-        ", " . $begwatercase . 
-        ", " . $begwaterbottle . 
-        ")";
+        $sql = "INSERT INTO beginv (barID, barName, manName, coorCase, coorCan, dateUploaded, millerCase, millerCan, vizzyCase, vizzyCan, topoCase, topoCan, rdcCase, rdcCan, rdmCase, rdmCan, bstCase, bstCan, waterCase, waterBottle) VALUES (" . $barid . ", '" . $barname . "', '" . $managername . "', " . $begcoorscase . ", " . $begcoorscan . ", '" . $date . "', " . $begmillercase . ", " . $begmillercan . ", " . $begvizzycase . ", " . $begvizzycan . ", " . $begtopocase . ", " . $begtopocan . ", " . $begrdccase . ", " . $begrdccan . ", " . $begrdmcase . ", " . $begrdmcan . ", " . $begbstcase . ", " . $begbstcan . ", " . $begwatercase . ", " . $begwaterbottle . ")";
         echo $sql;
         // send query to the database to add values and confirm if successful
         if ( mysqli_query($con, $sql) ) {

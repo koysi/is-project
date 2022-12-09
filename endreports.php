@@ -37,43 +37,31 @@
     <br>
     <center>
         <div class="div3">
-            <form method=" post" action=""><br>
+            <form method="post" action="endreports.php"><br>
                 <center>
                     <h1>ENDING INVENTORY</h1>
                 </center>
                 <br>
-                <form>
                     <div class="div4">
                         <label for="barid">Bar ID: </label><br>
                         <input type="number" class="textbox" id="barid" name="barid" style="width: 690px" />
                     </div>
-                </form>
-
-                <form>
                     <div class="div2">
                         <label for="barname">Bar Name: </label>
                         <input type="text" class="textbox" id="barname" name="barname" style="width: 690px" />
                         <br>
                     </div>
-                </form>
-
-                <form>
                     <div class="div4">
                         <label for="man_name">Manager: </label>
                         <input type="text" class="textbox" id="man_name" name="man_name" style="width: 690px" />
                         <br>
                     </div>
-                </form>
-
-                <form>
                     <div class="div2">
                         <label for="txt_date">Date: </label>
                         <input type="text" class="textbox" id="txt_date" name="txt_date" style="width: 690px" />
                     </div>
-                </form>
                 <center><img src="https://taftandhardingevents.com/wp-content/uploads/2022/06/taft-and-harding-final.png" height=150 width=180 alt="logo"></center>
                 <table id="beer">
-                    <form method="post" action="">
                         <tr>
                             <th>Beer</th>
                             <th>Cases</th>
@@ -119,7 +107,6 @@
                             <td><input type="number" class="textbox" id="begwatercase" name="begwatercase" placeholder="" style="width:200px" /></td>
                             <td><input type="number" class="textbox" id="begwatercan" name="begwatercan" placeholder="" style="width:200px" /></td>
                         </tr>
-                    </form>
                 </table>
                 <br>
                 <div>&nbsp;&nbsp;
@@ -128,63 +115,62 @@
                 <br>
             </form>
         </div>
-        <?php
-        // getting values from HTML form
-        if (isset($_POST['submit_but']) && isset($_POST['beginning'])) {
-            $barid = $_POST['barid'];
-            $barname = $_POST['barname'];
-            $manname = $_POST['man_name'];
-            $date = $_POST['txt_date'];
+</center>
+<?php
 
-            $begcoorscase = $_POST['begcoorcase'];
-            $begcoorscan = $_POST['begcoorcan'];
-            $begmillercase = $_POST['begmillercase'];
-            $begmillercan = $_POST['begmillercan'];
-            $begvizzycase = $_POST['begvizzycase'];
-            $begvizzycan = $_POST['begvizzycan'];
-            $begtopocase = $_POST['begtopocase'];
-            $begtopocan = $_POST['begtopocan'];
-            $begrdccase = $_POST['begrdccase'];
-            $begrdccan = $_POST['begrdccan'];
-            $begrdmcase = $_POST['begrdmcase'];
-            $begrdmcan = $_POST['begrdmcan'];
-            $begbstcase = $_POST['begbstcase'];
-            $begbstcan = $_POST['begbstcan'];
-            $begwatercase = $_POST['begwatercase'];
-            $begwaterbottle = $_POST['begwatercan'];
-        }
+// database login details
+$host = "localhost";
+$username = "root";
+$password = "";
+$dbname = "database";
 
-        // database login details
-        $host = "localhost";
-        $username = "root";
-        $password = "";
-        if (isset($_POST['beginning'])) {
-            $dbname = "begreports";
-        } else {
-            $dbname = "endreports";
-        }
+// creating connection
+$con = mysqli_connect($host, $username, $password, $dbname);
 
-        // creating connection
-        $con = mysqli_connect($host, $username, $password, $dbname);
+// ensure connection is made
+if (!$con) {
+    die("Connection failed!" . mysqli_connect_error());
+}
 
-        // ensure connection is made
-        if (!$con) {
-            die("Connection failed!" . mysqli_connect_error());
-        }
+// getting values from HTML form
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    $barid = mysqli_real_escape_string($con, $_POST['barid']);
+    $barname = mysqli_real_escape_string($con, $_POST['barname']);
+    $managername = mysqli_real_escape_string($con, $_POST['man_name']);
+    $date = $_POST['txt_date'];
 
-        // using SQL to create a data entry query
-        $sql = "INSERT INTO `inv_entries` (`barid`, `barname`, `manname`, `date`) VALUES ('0', '$barid', '$barname', '$manname', '$date')";
+    $begcoorscase = mysqli_real_escape_string($con, $_POST['begcoorcase']);
+    $begcoorscan = mysqli_real_escape_string($con, $_POST['begcoorcan']);
+    $begmillercase = mysqli_real_escape_string($con, $_POST['begmillercase']);
+    $begmillercan = mysqli_real_escape_string($con, $_POST['begmillercan']);
+    $begvizzycase = mysqli_real_escape_string($con, $_POST['begvizzycase']);
+    $begvizzycan = mysqli_real_escape_string($con, $_POST['begvizzycan']);
+    $begtopocase = mysqli_real_escape_string($con, $_POST['begtopocase']);
+    $begtopocan = mysqli_real_escape_string($con, $_POST['begtopocan']);
+    $begrdccase = mysqli_real_escape_string($con, $_POST['begrdccase']);
+    $begrdccan = mysqli_real_escape_string($con, $_POST['begrdccan']);
+    $begrdmcase = mysqli_real_escape_string($con, $_POST['begrdmcase']);
+    $begrdmcan = mysqli_real_escape_string($con, $_POST['begrdmcan']);
+    $begbstcase = mysqli_real_escape_string($con, $_POST['begbstcase']);
+    $begbstcan = mysqli_real_escape_string($con, $_POST['begbstcan']);
+    $begwatercase = mysqli_real_escape_string($con, $_POST['begwatercase']);
+    $begwaterbottle = mysqli_real_escape_string($con, $_POST['begwatercan']);
 
-        // send query to the database to add values and confirm if successful
-        $rs = mysqli_query($con, $sql);
-        if ($rs) {
-            echo "Entries added!";
-        }
+    // using SQL to create a data entry query
+    $sql = "INSERT INTO endinv (barID, barName, manName, coorCase, coorCan, dateUploaded, millerCase, millerCan, vizzyCase, vizzyCan, topoCase, topoCan, rdcCase, rdcCan, rdmCase, rdmCan, bstCase, bstCan, waterCase, waterBottle) VALUES (" . $barid . ", '" . $barname . "', '" . $managername . "', " . $begcoorscase . ", " . $begcoorscan . ", '" . $date . "', " . $begmillercase . ", " . $begmillercan . ", " . $begvizzycase . ", " . $begvizzycan . ", " . $begtopocase . ", " . $begtopocan . ", " . $begrdccase . ", " . $begrdccan . ", " . $begrdmcase . ", " . $begrdmcan . ", " . $begbstcase . ", " . $begbstcan . ", " . $begwatercase . ", " . $begwaterbottle . ")";
+    echo $sql;
+    // send query to the database to add values and confirm if successful
+    if ( mysqli_query($con, $sql) ) {
+    echo "SQL Query Successful";
+    } else {
+    echo ("Failed: " . mysqli_error($con));
+}
 
-        // close connection
-        mysqli_close($con);
+// close connection
+mysqli_close($con);
+}
 
-        ?>
+?>
     </center>
     <br><br><br><br>
 </div>
